@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Motion Gallery</title>
+  <meta name="description" content="Eighteen ways a website can move, each one live, each with a prompt to paste into Claude Code.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="progress" aria-hidden="true"><span></span></div>
+
+  <header class="bar">
+    <a class="brand" href="#top">Motion Gallery</a>
+    <nav class="cats" aria-label="Sections">
+      <a href="#on-load">On load</a>
+      <a href="#on-scroll">On scroll</a>
+      <a href="#cursor">Cursor</a>
+      <a href="#always">Always on</a>
+    </nav>
+    <button class="smooth-toggle mono" type="button" aria-pressed="true">Smooth scroll: on</button>
+  </header>
+
+  <main id="top">
+    <section class="intro">
+      <p class="kicker mono">18 effects · scroll, hover, replay</p>
+      <h1 class="intro-title" data-split>Motion Gallery</h1>
+      <p class="intro-sub">Ways a website can move, each one live. Find one you like, copy its prompt, and paste it into Claude Code.</p>
+      <p class="rm-note mono" hidden>Your device asks for less motion. This gallery plays everything anyway so you can see each effect. Every prompt here tells Claude to respect that setting on a real site.</p>
+      <div class="toc"></div>
+    </section>
+
+    <!-- A · On load -->
+    <section class="group" id="on-load">
+      <header class="group-head"><span class="mono">A</span><h2>On load</h2><p>Plays once, when the page or a section first appears.</p></header>
+
+      <article class="ex" id="load-in">
+        <div class="stage">
+          <div class="mock-hero">
+            <span class="chip li">Fresh daily · since 1994</span>
+            <h4 class="li">Bread worth waking up for.</h4>
+            <p class="li">Sourdough, rye and morning buns, baked before sunrise in a small shop on Elm Street.</p>
+            <div class="li row"><span class="btn btn-ember">Order for pickup</span><span class="btn">See the menu</span></div>
+          </div>
+        </div>
+      </article>
+
+      <article class="ex" id="split-text">
+        <div class="stage">
+          <h4 class="split-head" data-split>Bread worth waking up for.</h4>
+        </div>
+      </article>
+
+      <article class="ex" id="wipe">
+        <div class="stage stage-flush">
+          <div class="wipe"><div class="wipe-inner landscape"></div></div>
+        </div>
+      </article>
+
+      <article class="ex" id="count-up">
+        <div class="stage">
+          <div class="stats">
+            <div class="stat"><b data-to="12400" data-comma>0</b><span>loaves a year</span></div>
+            <div class="stat"><b data-to="98" data-suffix="%">0</b><span>made from scratch</span></div>
+            <div class="stat"><b data-to="4.9" data-dec="1" data-suffix="★">0</b><span>average review</span></div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- B · On scroll -->
+    <section class="group" id="on-scroll">
+      <header class="group-head"><span class="mono">B</span><h2>On scroll</h2><p>Tied to the scrollbar. Scroll slowly, then scroll back up.</p></header>
+
+      <article class="ex" id="reveal">
+        <div class="stage stage-tall">
+          <div class="reveal-grid">
+            <div class="rcard"><i></i><b>Sourdough</b><span>48-hour rise</span></div>
+            <div class="rcard"><i></i><b>Dark rye</b><span>Caraway and molasses</span></div>
+            <div class="rcard"><i></i><b>Morning buns</b><span>Orange and cardamom</span></div>
+            <div class="rcard"><i></i><b>Focaccia</b><span>Rosemary and sea salt</span></div>
+            <div class="rcard"><i></i><b>Baguette</b><span>Out of the oven at 7</span></div>
+            <div class="rcard"><i></i><b>Seeded loaf</b><span>Five seeds, no sugar</span></div>
+          </div>
+        </div>
+      </article>
+
+      <article class="ex" id="parallax">
+        <div class="stage stage-flush">
+          <div class="plx">
+            <div class="plx-layer plx-sun" data-y="-90,150"></div>
+            <svg class="plx-layer" data-y="-50,110" viewBox="0 0 1200 400" preserveAspectRatio="none" aria-hidden="true"><path fill="#E9A07C" d="M0 260 L120 170 L240 230 L380 120 L520 210 L660 140 L800 220 L940 110 L1080 200 L1200 150 L1200 400 L0 400Z"/></svg>
+            <svg class="plx-layer" data-y="-20,50" viewBox="0 0 1200 400" preserveAspectRatio="none" aria-hidden="true"><path fill="#C15F3C" d="M0 300 C150 220 260 250 380 280 C520 315 620 210 780 230 C930 250 1040 300 1200 250 L1200 400 L0 400Z"/></svg>
+            <svg class="plx-layer" data-y="30,-40" viewBox="0 0 1200 400" preserveAspectRatio="none" aria-hidden="true"><path fill="#7A3522" d="M0 340 C180 300 300 330 460 350 C640 372 760 300 940 320 C1060 333 1130 350 1200 340 L1200 400 L0 400Z"/></svg>
+            <svg class="plx-layer" data-y="60,-90" viewBox="0 0 1200 400" preserveAspectRatio="none" aria-hidden="true"><path fill="#1A1916" d="M0 380 C200 350 360 372 560 380 C760 388 920 350 1200 372 L1200 400 L0 400Z"/></svg>
+            <p class="plx-title" data-y="70,-70">Up before the sun.</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="ex" id="zoom-out">
+        <div class="stage stage-flush">
+          <div class="zoom-wrap">
+            <div class="zoom-sticky">
+              <div class="zoom-img landscape"><p>Foxglove Bakery</p></div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="ex" id="sideways">
+        <div class="stage stage-flush">
+          <div class="hs">
+            <div class="hs-track">
+              <div class="hs-panel"><span class="mono">01</span><b>Mix</b><p>Flour, water, salt and a starter that's older than the shop.</p></div>
+              <div class="hs-panel"><span class="mono">02</span><b>Rest</b><p>Forty-eight hours in the cold, so the flavor gets deep.</p></div>
+              <div class="hs-panel"><span class="mono">03</span><b>Shape</b><p>Every loaf folded by hand at 3 a.m.</p></div>
+              <div class="hs-panel"><span class="mono">04</span><b>Bake</b><p>A stone oven at 250°C, steam for the first ten minutes.</p></div>
+              <div class="hs-panel"><span class="mono">05</span><b>Open</b><p>Doors at seven. Usually sold out by noon.</p></div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="ex" id="read-along">
+        <div class="stage stage-tall">
+          <p class="read" data-words>We bake the way the old shop did: slowly, by hand, before anyone else is awake. Nothing comes out of a bag and nothing sits on a shelf overnight. If it's on the counter, it was flour this morning.</p>
+        </div>
+      </article>
+
+      <article class="ex" id="frames">
+        <div class="stage stage-flush">
+          <div class="fr-wrap">
+            <div class="fr-sticky">
+              <canvas class="fr-canvas" aria-label="Headphones coming apart as you scroll"></canvas>
+              <p class="fr-count mono">frame 01 / 90</p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="ex" id="stack">
+        <div class="stage stage-flush">
+          <div class="stack">
+            <div class="scard" style="--c:#E9A07C"><span class="mono">01</span><b>Order online</b><p>Pick your loaves the night before.</p></div>
+            <div class="scard" style="--c:#C15F3C"><span class="mono">02</span><b>We bake at 3</b><p>Your order goes in the first batch.</p></div>
+            <div class="scard" style="--c:#7A3522"><span class="mono">03</span><b>Pick up warm</b><p>Ready from 7 a.m., bagged with your name.</p></div>
+            <div class="scard" style="--c:#1A1916"><span class="mono">04</span><b>Come back tomorrow</b><p>Everyone does.</p></div>
+          </div>
+        </div>
+      </article>
+
+      <article class="ex" id="progress">
+        <div class="stage">
+          <div class="ring">
+            <svg viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="52" class="ring-bg"/><circle cx="60" cy="60" r="52" class="ring-fg"/></svg>
+            <p><b class="ring-num">0</b><span>% through this page</span></p>
+          </div>
+          <p class="stage-note mono">The thin bar at the very top of the page is the effect. This ring follows it.</p>
+        </div>
+      </article>
+    </section>
+
+    <!-- C · Cursor -->
+    <section class="group" id="cursor">
+      <header class="group-head"><span class="mono">C</span><h2>With the cursor</h2><p>Reacts to your mouse. Best on a laptop or desktop.</p></header>
+
+      <article class="ex" id="magnetic">
+        <div class="stage stage-magnet">
+          <button class="magnet" type="button"><span>Order now</span></button>
+          <p class="stage-note mono">Move your cursor near the button.</p>
+        </div>
+      </article>
+
+      <article class="ex" id="tilt">
+        <div class="stage">
+          <div class="tilt-row">
+            <div class="tilt"><div class="tilt-art" style="--c:#E9A07C"></div><b>Sourdough</b><span>$9</span><i class="glare"></i></div>
+            <div class="tilt"><div class="tilt-art" style="--c:#C15F3C"></div><b>Morning bun</b><span>$4.50</span><i class="glare"></i></div>
+            <div class="tilt"><div class="tilt-art" style="--c:#7A3522"></div><b>Dark rye</b><span>$10</span><i class="glare"></i></div>
+          </div>
+        </div>
+      </article>
+
+      <article class="ex" id="spotlight">
+        <div class="stage stage-flush">
+          <div class="spot">
+            <div class="spot-layer spot-dim"></div>
+            <div class="spot-layer spot-lit"></div>
+          </div>
+        </div>
+      </article>
+
+      <article class="ex" id="hovers">
+        <div class="stage">
+          <div class="hover-row">
+            <a class="hv hv-fill" href="#hovers"><span>Fill from the left</span></a>
+            <a class="hv hv-line" href="#hovers">Underline that grows</a>
+            <a class="hv hv-arrow" href="#hovers">Arrow that nudges <span aria-hidden="true">→</span></a>
+            <a class="hv hv-lift" href="#hovers">Lift and shadow</a>
+          </div>
+          <p class="stage-note mono">Hover each one.</p>
+        </div>
+      </article>
+    </section>
+
+    <!-- D · Always on -->
+    <section class="group" id="always">
+      <header class="group-head"><span class="mono">D</span><h2>Always on</h2><p>Runs the whole time, or changes how the whole page feels.</p></header>
+
+      <article class="ex" id="marquee">
+        <div class="stage stage-flush">
+          <div class="mq">
+            <div class="mq-row"><div class="mq-track">Sourdough · Dark rye · Morning buns · Focaccia · Baguette · Seeded loaf · </div></div>
+            <div class="mq-row mq-alt"><div class="mq-track">Open at 7 · Sold out by noon · Baked by hand · Open at 7 · Sold out by noon · Baked by hand · </div></div>
+          </div>
+          <p class="stage-note mono mq-note">Scroll fast to speed it up. Scroll up to flip it.</p>
+        </div>
+      </article>
+
+      <article class="ex" id="smooth">
+        <div class="stage">
+          <div class="smooth-demo">
+            <p>Smooth scroll is <b class="smooth-state">on</b>.</p>
+            <p class="stage-note mono">Turn it off, scroll this page with a mouse wheel, then turn it back on. On is the glide; off is the jump.</p>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <footer class="foot">
+      <p>Built with <a href="https://gsap.com/docs/v3/Plugins/ScrollTrigger/">GSAP ScrollTrigger</a>, <a href="https://github.com/darkroomengineering/lenis">Lenis</a> and plain CSS. No build step: open <code>index.html</code>.</p>
+    </footer>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="gallery.js"></script>
+</body>
+</html>
